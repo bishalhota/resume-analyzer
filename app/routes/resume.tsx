@@ -71,7 +71,7 @@ const Resume =()=>{
                 <section className="feedback-section">
                     <h2 className="text-4xl text-black font-bold">Resume Review</h2>
                     {feedback ? (
-                        <div className="flex felx-col gap-8 animate-in fade-in duration-1000">
+                        <div className="flex flex-col gap-8 animate-in fade-in duration-1000">
                             Summary ATS Details
                             <Summary feedback={feedback} />
                             <ATS score={feedback.ATS.score || 0} suggestions={feedback.ATS.tips || []} />
