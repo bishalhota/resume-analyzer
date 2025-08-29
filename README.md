@@ -1,87 +1,63 @@
-# Welcome to React Router!
+🚀 Resume Analyzer
+Resume Analyzer is an AI-powered web application that evaluates resumes, assigns an ATS score, and provides actionable suggestions to improve clarity, structure, and job-fit.
 
-A modern, production-ready template for building full-stack React applications using React Router.
+📌 Prerequisites
+Before setting up the project, ensure you have the following installed:
+Node.js: v18 or higher
+npm: Comes bundled with Node.js
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+⚙️ Project Setup
+Clone the repository
+git clone https://github.com/your-username/resume-analyzer.git
+cd resume-analyzer
 
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
+Install dependencies
 npm install
-```
 
-### Development
-
-Start the development server with HMR:
-
-```bash
+▶️ Running the Application
+The app is built with React + Vite.
+Start the development server:
 npm run dev
-```
 
-Your application will be available at `http://localhost:5173`.
+By default, the application will be available at:
+👉 http://localhost:5173
 
-## Building for Production
+🖥️ Application Workflow
+Upload Resume
+Click "Upload Resume" or drag & drop a PDF file.
+Only PDF files are supported.
 
-Create a production build:
+Provide Job Context (Optional)
+Enter the company name, job title, and job description for tailored feedback.
+The AI will match your resume against job-specific requirements.
 
-```bash
-npm run build
-```
+Analyze Resume
+Click "Analyze Resume".
 
-## Deployment
+The system will:
+Convert the resume into an image for preview
+Send data to the AI for analysis
+Generate ATS score and detailed feedback
 
-### Docker Deployment
+View Results
+Resume Preview: Visual representation of your uploaded resume
+Summary: Overall resume score with category breakdown (Tone, Content, Structure, Skills)
+ATS Score: Likelihood of passing Applicant Tracking Systems
+Detailed Feedback: Actionable tips, organized in an accordion format for easy navigation
 
-To build and run using Docker:
+📸 Screenshots
+🔹 Dashboard – Track Applications & Resume Ratings
+🔹 Resume Upload & Job Context Form
+🔹 Resume Review & ATS Feedback
 
-```bash
-docker build -t my-app .
+🛠️ Tech Stack
+Frontend: React, Vite, Tailwind CSS
+State Management: Zustand
+File & AI Integration: Puter.js SDK
+PDF Parsing & Preview: PDF.js
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+🌟 Features
+AI-powered resume analysis with ATS scoring
+Drag-and-drop PDF upload with job context input
+Real-time resume preview & category-wise scoring
+Actionable feedback suggestions for better ATS compatibility
